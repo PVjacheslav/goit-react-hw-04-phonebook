@@ -1,6 +1,6 @@
 import { Forma, Input, Label } from "./Filter.styled"
 
-export const Filter=({ value, onChangeFilter }) =>{
+function Filter({ value, onChangeFilter }) {
     return (
         <Forma>
             <Label>
@@ -10,3 +10,5 @@ export const Filter=({ value, onChangeFilter }) =>{
         </Forma>
     )
 }
+
+export default Filter;

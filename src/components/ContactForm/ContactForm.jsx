@@ -8,7 +8,7 @@ const contactFormSchema = Yup.object().shape({
     number: Yup.number().min(4, "Min 4 numbers").required("This field is required!"),
 })
 
-export const ContactForm = ({onAdd}) => {
+const ContactForm = ({onAdd}) => {
     return (
         <div>
             <Formik
@@ -44,3 +44,5 @@ export const ContactForm = ({onAdd}) => {
         </div>
     );
 }
+
+export default ContactForm;
